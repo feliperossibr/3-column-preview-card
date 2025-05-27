@@ -14,10 +14,42 @@
 
   --ff-paragraph: "Lexend Deca", sans-serif;
   --ff-title: "Big Shoulders", sans-serif;
-
-  --paragraph-font: 400 1rem var(--ff-paragraph);
 }
 
 body, html {
   font-size: 15px;
+  padding: 2rem 1rem;
+}
+
+h1 {
+  color: var(--white);
+  font: 700 2rem var(--ff-title);
+  text-transform: uppercase;
+}
+
+p {
+  color: var(--light-gray);
+}
+
+.cards-wrapper{
+  display: grid;
+  
+
+  & > .card-sedans {
+    background-color: var(--bright-orange);
+
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+  }
+
+  & > .card-suvs {
+    background-color: var(--dark-cyan);
+  }
+
+  & > .card-luxury {
+    background-color: var(--very-dark-cyan);
+
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+  }
 }
