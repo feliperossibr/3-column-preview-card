@@ -42,13 +42,13 @@ h1 {
 
 p {
   color: var(--light-gray);
-  font-size: .8rem;
+  font-size: .9rem;
 
   margin-bottom: 1.5rem;
 }
 
 .cards-wrapper{
-  width: 15rem;
+  width: 18rem;
 
   & > .card-sedans {
     background-color: var(--bright-orange);
@@ -69,6 +69,17 @@ p {
   }
 }
 
+button {
+  border: none;
+  border-radius: 2rem;
+  
+  padding: 1rem;
+  width: 10rem;
+  
+  font: 400 .9rem var(--ff-paragraph);
+  cursor: pointer;
+}
+
 .padding {
   padding: 2rem;
 }
@@ -83,4 +94,80 @@ p {
 
 .flex-column {
   flex-direction: column;
+}
+
+#btn-sedans {
+  background-color: var(--white);
+  color: var(--bright-orange);
+
+  &:hover {
+    background-color: var(--bright-orange);
+    color: var(--white);
+    border: 1px solid var(--white);
+  }
+}
+
+#btn-suvs {
+  background-color: var(--white);
+  color: var(--dark-cyan);
+
+  &:hover {
+    background-color: var(--dark-cyan);
+    color: var(--white);
+    border: 1px solid var(--white);
+  }
+}
+
+#btn-luxury {
+  background-color: var(--white);
+  color: var(--very-dark-cyan);
+
+  &:hover {
+    background-color: var(--very-dark-cyan);
+    color: var(--white);
+    border: 1px solid var(--white);
+  }
+}
+
+@media screen and ( width >= 1280px) {
+  .cards-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50rem;
+    height: auto;
+
+
+    & > .card-sedans {
+      border-bottom-left-radius: .5rem;
+      border-top-right-radius: 0;
+      height: 25rem;
+      justify-content: space-between;
+
+      & > p {
+        margin-bottom: 5rem;
+      }
+    }
+
+    & > .card-suvs {
+      height: 25rem;
+      justify-content: space-between;
+
+      & > p {
+        margin-bottom: 5rem;
+      }
+    }
+
+    & > .card-luxury {
+      border-bottom-left-radius: 0;
+      border-top-right-radius: .5rem;
+
+      height: 25rem;
+      justify-content: space-between;
+
+      & > p {
+        margin-bottom: 5rem;
+      }
+    }
+  }
 }
