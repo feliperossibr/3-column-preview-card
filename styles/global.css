@@ -1,0 +1,23 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bright-orange: #e38826;
+  --dark-cyan: #006970;
+  --very-dark-cyan: #004241;
+
+  --white: #ffffff;
+  --light-gray: #f2f2f2;
+
+  --ff-paragraph: "Lexend Deca", sans-serif;
+  --ff-title: "Big Shoulders", sans-serif;
+
+  --paragraph-font: 400 1rem var(--ff-paragraph);
+}
+
+body, html {
+  font-size: 15px;
+}
